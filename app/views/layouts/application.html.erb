@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Bmoproject</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>BMO Project</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
 
-  </head>
+</head>
 
-  <body>
-    <%= render 'shared/navbar' %>
-    <%= render 'shared/flashes' %>
-
-    <%= yield %>
-  </body>
+<body class="Site">
+  <%= render 'shared/navbar' %>
+  <%= render 'shared/flashes' %>
+  <main class="Site-content">
+    <div class="content">
+      <%= yield %>
+    </div>
+  </main>
+  <%= render 'shared/footer' %>
+</body>
 </html>
