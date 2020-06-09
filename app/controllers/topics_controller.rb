@@ -1,16 +1,19 @@
 class TopicsController < ApplicationController
   before_action :set_topic, only: [:show, :edit, :update, :destroy]
+  skip_before_action :authenticate_user!, only: [ :index, :show]
 
   # GET /topics
   # GET /topics.json
   def index
     @topics = Topic.all
+    @themes = Theme.all
   end
 
   # GET /topics/1
   # GET /topics/1.json
   def show
     @topics = Topic.all
+    @themes = Theme.all
   end
 
   # GET /topics/new

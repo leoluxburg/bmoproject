@@ -2,6 +2,9 @@
 a {
   color: black;
 }
+ul {
+  list-style-type: none;
+}
 
 .banner {
   color: white;
@@ -27,7 +30,9 @@ a {
 .punto img{
   height: 75px;
 }
-
+.contact img{
+  height: 250px;
+}
 
 .banner2 {
   color: white;
@@ -77,3 +82,21 @@ iframe {
   padding-bottom: 20px;
 }
 
+.suscribe h2{
+  color: white;
+}
+
+.suscribe h2:hover{
+  color: #035ac1;
+}
+
+.boton {
+    border: 2px solid white;
+    font-size: 30px;
+    color: white;
+}
+.boton:hover {
+  background-color: white;
+  color: blacK;
+    font-size: 30px;
+}

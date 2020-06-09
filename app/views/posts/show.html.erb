@@ -1,5 +1,5 @@
 <div class="container" style="padding-top: 80px; padding-bottom: 80px;">
-<h1><%= @post.title %></h1>
+<h2><%= @post.title %></h2>
 <hr>
 <div class="text-center">
 <%= @post.video.html_safe %>
@@ -9,5 +9,7 @@
   <h3>Creador: <a href="https://www.youtube.com/channel/UCX9NJ471o7Wie1DQe94RVIg">Fatz</a></h3>
   <p><i class="fas fa-globe"></i> Website: <a href="https://www.faztweb.com/">https://www.faztweb.com/</a></p>
 </div>
-<hr>
+<div>
+  <%= @post.content.html_safe %>
+</div>
 </div>

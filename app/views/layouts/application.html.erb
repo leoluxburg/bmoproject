@@ -2,6 +2,14 @@
 <html>
 <head>
   <title>BMO Project</title>
+  <meta name="keywords" content="aprende, educacion, bmo, programacion, desarollo web, aplicaciones, javascript, python, php, go, ruby, django, ruby on rails, react, ionic, swift, flutter">
+  <meta name="description" content="Educate de gratis - Aprende - Comparte - Desarrolla">
+  <meta name="author" content="Max The Dog">
+  <meta name="author" content="John Doe">
+  <meta http-equiv="refresh" content="400">
+
+
+
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
@@ -14,7 +22,7 @@
 <body class="Site">
   <%= render 'shared/navbar' %>
   <%= render 'shared/flashes' %>
-  <main class="Site-content">
+  <main class="Site-content" style="padding-top: 50px;">
     <div class="content">
       <%= yield %>
     </div>

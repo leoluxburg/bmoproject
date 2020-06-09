@@ -1,0 +1,2 @@
+class Suscribe < ApplicationRecord
+end

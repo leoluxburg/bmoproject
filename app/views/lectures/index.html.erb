@@ -1,0 +1,19 @@
+<div class="container" style="padding-top: 80px; padding-bottom: 80px;">
+  <h2>Blog</h2>
+  <hr>
+  <div class="">
+    <% @lectures.each do |lecture| %>
+    <%= link_to lecture do %>
+    <div style="">
+      <h5><i class="fas fa-sd-card"></i> <%= lecture.number %> - <%= lecture.title %></h5>
+      <div style="padding-left: 30px;">
+             <p><i class="far fa-file-alt"></i> Corta | <i class="fas fa-microphone"></i> ES | <i class="fas fa-pen-alt"></i> Leo <br>
+         - <%= lecture.description %></p>
+        </div>
+      </div>
+      <% end %>
+      <% end %>
+    </div>
+    <hr>
+  </div>
+

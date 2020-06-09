@@ -10,53 +10,83 @@
     <i class="fa fa-angle-double-down symbols" aria-hidden="true"></i>
   </div>
 </div>
-<div class="container" style="margin-top:30px">
+<div class="container" style="padding-top: 100px; padding-bottom: 100px;">
+  <h3>Blog</h3>
+  <hr>
   <div class="row">
-    <div class="col-sm-3">
-      <br>
-      <h3>Categorias</h3>
-      <hr>
-      <ul class="nav  flex-column">
-       <li class="nav-item">
-        <%= link_to "/" do %>
-        <p class="nav-link">All</p>
-        <% end %>
-      </li>
-      <% @topics.each do |topic| %>
-      <li class="nav-item">
-        <%= link_to topic do %>
-        <p class="nav-link"><%= topic.title%></p>
-        <% end %>
-      </li>
-      <% end %>
-    </ul>
-    <hr>
-  </div>
-  <div class="col-sm-9">
-    <div class="tab-content">
+   <div class="col-lg-3">
      <div class="jumbotron" style="background-color: black;">
-      <h2 class="text-center" style="color: white;">Aprende</h2>
+      <h2 class="text-center" style="color: white;"><%= @lecture.number %></h2>
     </div>
-    <hr>
+  </div>
+
+  <div class="col-sm-9">
+    <%= link_to @lecture do %>
+    <div style="padding-top: 40px;">
+      <h2><i class="fas fa-sd-card"></i> <%= @lecture.title %></h2>
+      <div style="padding-left: 30px;">
+        <p><i class="far fa-file-alt"></i> Corta | <i class="fas fa-microphone"></i> ES | <i class="fas fa-pen-alt"></i> Leo <br>
+         - <%= @lecture.description %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% end %>
+  <hr>
+</div>
+<div style="background-color: black;">
+  <div class="container" style="padding-top: 100px; padding-bottom: 100px;">
+    <div class=" text-center suscribe">
+     <a href="/suscribes/new"><h2 class= "" style="">SUSCRÍBETE</h2></a>
+    </div>
+  </div>
+</div>
+<div class="container" style="padding-top:100px; padding-bottom: 100px;">
+   <h3>Cursos</h3>
+   <hr>
+  <div class="row">
+   <div class="col-lg-2">
+    <div data-toggle="collapse" href="#collapse1">
+      <h5>Categorias <i class="fas fa-caret-down"></i> </h5>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
+      <hr>
+      <ul class="list-group">
+        <li class="">
+          <%= link_to "/" do %>
+          <p class="">All</p>
+          <% end %>
+        </li>
+        <% @topics.each do |topic| %>
+        <li class="">
+          <%= link_to topic do %>
+          <p class=""><%= topic.title%></p>
+          <% end %>
+        </li>
+        <%end%>
+      </ul>
+      <hr>
+    </div>
+  </div>
+  <div class="col-sm-10">
     <div id="home" class="container tab-pane active">
       <% @themes.each do |theme| %>
-      <h3 class=""><%= theme.icon.html_safe %> <%= theme.title%></h3>
+      <h2 class=""><%= theme.icon.html_safe %> <%= theme.title%></h2>
       <% theme.posts.each do |post|%>
       <div style="padding-left: 15px;">
         <%= link_to post do %>
-        <h5><i class="fas fa-film"></i> <%= post.title %></h5>
+        <h3><i class="fas fa-film"></i> <%= post.title %></h3>
         <div style="padding-left: 15px;">
-        <p>- <%= post.description %> </p>
+          <p>- <%= post.description %> </p>
         </div>
         <%  end%>
       </div>
       <% end %>
       <% end %>
     </div>
-    <hr>
   </div>
 </div>
+<hr>
 </div>
-</div>
-<br>
-<br>
+
+
