@@ -30,10 +30,10 @@
       <% @topic.themes.each do |theme| %>
       <h2 class=""><%= theme.icon.html_safe %> <%= theme.title%></h2>
       <% theme.posts.each do |post|%>
-      <div style="padding-left: 15px;">
+      <div style="padding-left: 30px;">
         <%= link_to post do %>
         <h3><i class="fas fa-film"></i> <%= post.title %></h3>
-        <div style="padding-left: 15px;">
+        <div style="">
           <p>- <%= post.description %> </p>
         </div>
         <%  end%>
