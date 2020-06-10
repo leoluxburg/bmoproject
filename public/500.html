@@ -1,16 +1,40 @@
-<div class="container" style="padding-top: 80px; padding-bottom: 80px;">
- <h3> Contacto</h3>
- <hr>
- <div class="col-xs-12 text-center contact">
-  <br>
-  <%= image_tag("logo.png")%>
-  <br>
-  <br>
-  <h1> Error 505 </h1>
-  <h4>View Logs</h4>
-  <div class="text-center"><a href="/"><p class="btn btn-dark">Home</p> </a></div>
-  <br>
-</div>
-<hr>
-</div>
-
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>BMO Project</title>
+  <meta name="keywords" content="aprende, educacion, bmo, programacion, desarollo web, aplicaciones, javascript, python, php, go, ruby, django, ruby on rails, react, ionic, swift, flutter">
+  <meta name="description" content="Educate de gratis - Aprende - Comparte - Desarrolla">
+  <meta name="author" content="Max The Dog">
+  <meta name="author" content="John Doe">
+  <meta http-equiv="refresh" content="400">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+</head>
+<body class="Site">
+  <main class="Site-content" style="padding-top: 50px;">
+    <div class="content">
+      <div class="container" style="padding-top: 80px; padding-bottom: 80px;">
+       <h3> Contacto</h3>
+       <hr>
+       <div class="col-xs-12 text-center contact">
+        <br>
+        <%= image_tag("logo.png")%>
+        <br>
+        <br>
+        <h1> Error 505 </h1>
+        <h4>View logs</h4>
+        <div class="text-center"><a href="/"><p class="btn btn-dark">Home</p> </a></div>
+        <br>
+      </div>
+      <hr>
+    </div>
+  </div>
+</main>
+<%= render 'shared/footer' %>
+</body>
+</html>
