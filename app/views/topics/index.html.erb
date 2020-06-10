@@ -10,7 +10,7 @@
       <hr>
       <ul class="list-group">
         <li class="">
-          <%= link_to "/" do %>
+          <%= link_to "/topics" do %>
           <p class="">All</p>
           <% end %>
         </li>
@@ -32,7 +32,7 @@
       <% theme.posts.each do |post|%>
       <div style="padding-left: 15px;">
         <%= link_to post do %>
-        <h5><i class="fas fa-film"></i> <%= post.title %></h5>
+        <h3><i class="fas fa-film"></i> <%= post.title %></h3>
         <div style="padding-left: 15px;">
           <p>- <%= post.description %> </p>
         </div>

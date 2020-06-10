@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_09_074815) do
+ActiveRecord::Schema.define(version: 2020_06_10_055719) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2020_06_09_074815) do
     t.string "video"
     t.string "lenght"
     t.string "writter"
+    t.string "year"
   end
 
   create_table "posts", force: :cascade do |t|
@@ -38,6 +39,7 @@ ActiveRecord::Schema.define(version: 2020_06_09_074815) do
     t.datetime "updated_at", null: false
     t.string "icon"
     t.string "video"
+    t.string "year"
     t.index ["theme_id"], name: "index_posts_on_theme_id"
   end
 

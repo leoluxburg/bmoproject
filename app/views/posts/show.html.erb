@@ -1,15 +1,14 @@
 <div class="container" style="padding-top: 80px; padding-bottom: 80px;">
-<h2><%= @post.title %></h2>
-<hr>
-<div class="text-center">
-<%= @post.video.html_safe %>
-<p><i class="fas fa-hourglass-end"></i> <%= @post.time %> | <i class="fas fa-microphone"></i> <%= @post.language%> | <i class="fab fa-youtube"></i> Youtube</p>
-</div>
-<div>
-  <h3>Creador: <a href="https://www.youtube.com/channel/UCX9NJ471o7Wie1DQe94RVIg">Fatz</a></h3>
-  <p><i class="fas fa-globe"></i> Website: <a href="https://www.faztweb.com/">https://www.faztweb.com/</a></p>
-</div>
-<div>
-  <%= @post.content.html_safe %>
-</div>
+  <h2><%= @post.title %></h2>
+  <hr>
+  <div class="text-center">
+    <%= @post.video.html_safe %>
+  </div>
+  <hr>
+
+  <p class="text-center"><i class="fas fa-hourglass-end"></i> <%= @post.time %> | <i class="fas fa-language"></i> <%= @post.language%> | <i class="fa fa-calendar"></i> <%= @post.year %> </p>
+  <br>
+  <div>
+    <%= @post.content.html_safe %>
+  </div>
 </div>

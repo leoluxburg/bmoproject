@@ -91,12 +91,27 @@ iframe {
 }
 
 .boton {
-    border: 2px solid white;
-    font-size: 30px;
-    color: white;
+  border: 2px solid white;
+  font-size: 30px;
+  color: white;
 }
 .boton:hover {
   background-color: white;
   color: blacK;
-    font-size: 30px;
+  font-size: 30px;
+}
+
+.btn-dark{
+  background-color:black !important;
+}
+
+.number{
+  padding: 2rem 2rem;
+  margin-bottom: 1rem;
+  background-color: black;
+  border-radius: 2px;
+}
+
+.number h2{
+  padding-top: 8px;
 }

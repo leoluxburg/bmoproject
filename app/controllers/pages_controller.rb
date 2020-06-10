@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   def home
     @topics = Topic.all
     @themes = Theme.all
-    @lecture = Lecture.all.last
+    @lectures = Lecture.all
   end
 
   def sandbox

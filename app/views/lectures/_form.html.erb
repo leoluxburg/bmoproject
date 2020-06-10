@@ -1,4 +1,4 @@
-
+<div class="container">
 <%= simple_form_for(@lecture) do |f| %>
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
@@ -8,9 +8,14 @@
     <%= f.input :description %>
     <%= f.input :number %>
     <%= f.input :content %>
+    <%= f.input :video %>
+    <%= f.input :writter %>
+    <%= f.input :lenght %>
+    <%= f.input :year %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, class: "btn btn-dark" %>
   </div>
 <% end %>
+</div>

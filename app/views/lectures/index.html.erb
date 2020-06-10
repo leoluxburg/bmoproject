@@ -3,17 +3,24 @@
   <hr>
   <div class="">
     <% @lectures.each do |lecture| %>
-    <%= link_to lecture do %>
-    <div style="">
-      <h5><i class="fas fa-sd-card"></i> <%= lecture.number %> - <%= lecture.title %></h5>
-      <div style="padding-left: 30px;">
-             <p><i class="far fa-file-alt"></i> Corta | <i class="fas fa-microphone"></i> ES | <i class="fas fa-pen-alt"></i> Leo <br>
-         - <%= lecture.description %></p>
+    <% @lectures.each do |lecture| %>
+    <div class="col-sm-12 col-md-4">
+      <div class="number" style="background-color: black;">
+        <h2 class="text-center" style="color: white;"><%= lecture.number %></h2>
+        <%= link_to lecture do %>
+      </div>
+      <div style="">
+        <h2><i class="fas fa-sd-card"></i> <%= lecture.title %></h2>
+        <div style="padding-left: 30px;">
+          <p><i class="far fa-file-alt"></i> <%= lecture.lenght %> | <i class="fas fa-language"></i> ES | <i class="fas fa-pen-alt"></i> <%= lecture.writter %> </p>
+          <p> - <%= lecture.description %></p>
         </div>
       </div>
-      <% end %>
-      <% end %>
     </div>
-    <hr>
+    <% end %>
+    <% end %>
+    <% end %>
   </div>
+  <hr>
+</div>
 

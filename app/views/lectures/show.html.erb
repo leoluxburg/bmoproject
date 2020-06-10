@@ -2,8 +2,9 @@
 <h2><%= @lecture.title %></h2>
 <hr>
 <div class="text-center">
-
-<p><i class="far fa-file-alt"></i> Corta | <i class="fas fa-microphone"></i> ES | <i class="fas fa-pen-alt"></i> Leo</p>
+<%= @lecture.video.html_safe %>
+<hr>
+<p><i class="far fa-file-alt"></i> <%= @lecture.lenght %> | <i class="fas fa-language"></i> ES | <i class="fas fa-pen-alt"></i> <%= @lecture.writter %> </p>
 </div>
 <div>
 <%= @lecture.content.html_safe %>
