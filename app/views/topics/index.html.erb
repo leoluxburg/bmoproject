@@ -28,11 +28,11 @@
   <div class="col-sm-10">
     <div id="home" class="container tab-pane active">
       <% @themes.each do |theme| %>
-      <h2 class=""><%= theme.icon.html_safe %> <%= theme.title%></h2>
+      <h2 class=""><%= theme.icon.html_safe %> <%= theme.title%> </h2>
       <% theme.posts.each do |post|%>
       <div style="padding-left: 30px;">
         <%= link_to post do %>
-        <h3><i class="fas fa-film"></i> <%= post.title %></h3>
+        <h3><i class="fas fa-film"></i> <%= post.title %> | <%= post.year %> </h3>
         <div style="">
           <p>- <%= post.description %> </p>
         </div>
