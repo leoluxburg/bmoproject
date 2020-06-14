@@ -1,0 +1,133 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  background: white;
+
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.dropdown-item:hover{
+  background-color: white;
+}
+/ Specific CSS for your home-page
+a {
+  color: black;
+}
+ul {
+  list-style-type: none;
+}
+
+.banner {
+  color: white;
+  text-align: center;
+  height: 100vh;
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  background-position: center;
+}
+
+
+.banner img{
+  height: 300px;
+}
+
+.small img{
+  height: 300px;
+}
+
+.punto img{
+  height: 75px;
+}
+.contact img{
+  height: 250px;
+}
+
+.banner2 {
+  color: white;
+  text-align: center;
+  height: 50vh;
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  background-position: center;
+}
+
+.banner img{
+  height: 300px;
+}
+
+.small img{
+  height: 300px;
+}
+
+.punto img{
+  height: 75px;
+}
+
+.footer2{
+  background-color: black;
+}
+.footer2 img{
+  height: 60px;
+}
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.suscribe h2{
+  color: white;
+}
+
+.suscribe h2:hover{
+  color: #035ac1;
+}
+
+.boton {
+  border: 2px solid white;
+  font-size: 30px;
+  color: white;
+}
+.boton:hover {
+  background-color: white;
+  color: blacK;
+  font-size: 30px;
+}
+
+.btn-dark{
+  background-color:black !important;
+}
+
+.number{
+  background-color: black;
+  border-radius: 2px;
+}
+
+.number h2{
+  padding-top: 8px;
+  padding-bottom: 5px;
+}
