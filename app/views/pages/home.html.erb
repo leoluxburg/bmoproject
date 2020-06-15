@@ -16,7 +16,7 @@
   <div class="row">
    <% @lectures.each do |lecture| %>
    <div class="col-sm-12 col-md-4">
-  <%= link_to lecture do %>
+    <%= link_to lecture do %>
     <div class="number" style="background-color: black;">
       <h2 class="text-center" style="color: white;"><%= lecture.number %></h2>
     </div>
@@ -27,9 +27,9 @@
       </div>
     </div>
   </div>
+  <% end %>
+  <% end %>
 </div>
-<% end %>
-<% end %>
 <hr>
 <div class="text-center"><a href="/lectures"><p class="btn btn-dark">Todos</p> </a></div>
 </div>
@@ -76,17 +76,17 @@
         <%= link_to post do %>
         <h3><i class="fas fa-sd-card"></i> <%= post.title %></h3>
         <div style=" padding-left: 30px;">
-        <p class=""><i class="fas fa-hourglass-end"></i> <%= post.time %> | <i class="fas fa-language"></i> <%= post.language%> | <i class="fa fa-calendar"></i> <%= post.year %> <br>
-          - <%= post.description %> </p>
+          <p class=""><i class="fas fa-hourglass-end"></i> <%= post.time %> | <i class="fas fa-language"></i> <%= post.language%> | <i class="fa fa-calendar"></i> <%= post.year %> <br>
+            - <%= post.description %> </p>
+          </div>
+          <%  end%>
         </div>
-        <%  end%>
+        <% end %>
+        <% end %>
       </div>
-      <% end %>
-      <% end %>
     </div>
   </div>
-</div>
-<hr>
+  <hr>
 </div>
 
 
