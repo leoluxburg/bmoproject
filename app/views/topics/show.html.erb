@@ -28,6 +28,7 @@
   <div class="col-sm-10">
     <div id="home" class="container tab-pane active">
       <% @topic.themes.each do |theme| %>
+      <div>
       <h2 class=""> <%= theme.icon.html_safe %> <%= theme.title%></h2>
       <% theme.posts.each do |post|%>
       <div style="padding-left: 30px;">
@@ -39,6 +40,8 @@
         <%  end%>
       </div>
       <% end %>
+      </div>
+      <br>
       <% end %>
     </div>
   </div>
