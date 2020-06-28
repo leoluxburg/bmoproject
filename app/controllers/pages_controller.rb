@@ -5,6 +5,7 @@ class PagesController < ApplicationController
     @topics = Topic.all
     @themes = Theme.all
     @lectures = Lecture.all
+    @post = Post.all.last
   end
 
   def sandbox
