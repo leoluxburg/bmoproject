@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   def home
     @topics = Topic.all
     @themes = Theme.all
-    @lectures = Lecture.all
+    @lectures = Lecture.all.last(3)
     @post = Post.all.last
   end
 
