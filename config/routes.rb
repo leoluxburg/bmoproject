@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :suscribes
+  resources :subscriptions
   resources :lectures
   resources :posts
   resources :themes
