@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/community', to:'pages#community'
   get '/manifest', to:'pages#manifest'
   get '/links', to:'pages#links'
+  get '/kingofooo', to:'pages#dashboard'
   get '/contact', to:'pages#contact'
   devise_for :users
   root to: 'pages#home'

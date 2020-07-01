@@ -8,6 +8,14 @@ class PagesController < ApplicationController
     @post = Post.all.last
   end
 
+  def dashboard
+    @topics = Topic.all
+    @themes = Theme.all
+    @post = Post.all
+    @lectures = Lecture.all
+    @subscriptions = Subscription.all
+  end
+
   def sandbox
     @post = Post.all.first
   end
