@@ -16,6 +16,14 @@ class PagesController < ApplicationController
     @subscriptions = Subscription.all
   end
 
+  def posts_topics
+    @topics = Topic.all
+  end
+
+  def all_lectures
+    @lectures = Lecture.all
+  end
+
   def sandbox
     @post = Post.all.first
   end

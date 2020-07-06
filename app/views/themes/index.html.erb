@@ -1,50 +1,12 @@
-<div class="container" style="margin-top:30px">
-  <div class="row">
-    <div class="col-sm-3">
-      <br>
-      <h3>Categorias</h3>
-      <hr>
-      <ul class="nav  flex-column">
-       <li class="nav-item">
-        <%= link_to "/" do %>
-        <p class="nav-link">All</p>
-        <% end %>
-      </li>
-      <% @topics.each do |topic| %>
-      <li class="nav-item">
-        <%= link_to topic do %>
-        <p class="nav-link"><%= topic.title%></p>
-        <% end %>
-      </li>
-      <% end %>
-    </ul>
-    <hr>
-  </div>
-  <div class="col-sm-9">
-    <div class="tab-content">
-     <div class="jumbotron" style="background-color: black;">
-      <h2 class="text-center" style="color: white;">Aprende</h2>
-    </div>
-    <hr>
-    <div id="home" class="container tab-pane active">
-      <% @themes.each do |theme| %>
-      <h3 class=""><%= theme.icon.html_safe %> <%= theme.title%></h3>
-      <% theme.posts.each do |post|%>
-      <div style="padding-left: 15px;">
-        <%= link_to post do %>
-        <h5><i class="fas fa-film"></i> <%= post.title %></h5>
-        <div style="padding-left: 15px;">
-        <p>- <%= post.description %> </p>
-        </div>
-        <%  end%>
-      </div>
-      <% end %>
-      <% end %>
-    </div>
-    <hr>
-  </div>
+<div class="container" style="padding-top: 100px; padding-bottom: 100px;">
+  <h2>Temas</h2>
+  <hr>
+  <% @themes.each do |theme| %>
+  <p> <strong><%= theme.title %></strong> - <%= link_to 'Show', theme %> | <%= link_to 'Edit', edit_theme_path(theme) %> | <%= link_to 'Destroy', theme, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </p>
+  <% end %>
+  <%= link_to 'New Post', new_theme_path %>
+  <br>
+  <hr>
 </div>
-</div>
-</div>
-<br>
-<br>
+

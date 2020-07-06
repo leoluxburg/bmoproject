@@ -1,21 +1,31 @@
 <div class="container" style="padding-top: 80px; padding-bottom: 80px;">
  <h2>Dashboard</h2>
  <hr>
- <div class="col-xs-12 contact text-center">
-  <br>
-  <h3><i class="fas fa-users"></i> Users -  <%= @subscriptions.all.count %></h3>
-  <p><a href="/subscriptions">View</a></p>
-  <h3><i class="fas fa-scroll"></i> Posts - <%= @lectures.all.count %> </h3>
-  <p><a href="/lectures/new">Add</a></p>
-  <h4><i class="fas fa-video"></i> Tutoriales - <%= @post.all.count %> </h4>
-  <p><a href="/posts/new">Add</a></p>
-  <h4><i class="fas fa-list"></i> Categorias - <%= @themes.all.count %> </h4>
-  <p><a href="/themes/new">Add</a></p>
-  <h4><i class="fas fa-book"></i> Topics - <%= @topics.all.count %> </h4>
-  <p><a href="/topics/new">Add</a></p>
-  <br>
-  <a href="/community"><p class="btn btn-dark">Comunidad</p></a>
-  <br>
-</div>
-<hr>
-</div>
+ <br>
+ <div class="row">
+   <div class="col-md-4 text-center">
+    <h3><i class="fas fa-users"></i> Subscribers -  <%= @subscriptions.all.count %></h3>
+    <p><a href="/subscriptions">View</a></p>
+  </div>
+  <div class="col-md-4 text-center">
+    <h3><i class="fas fa-scroll"></i> Posts - <%= @lectures.all.count %> </h3>
+    <p><a href="/all_lectures">View</a></p>
+  </div>
+  <div class="col-md-4 text-center">
+    <h3><i class="fas fa-video"></i> Tutoriales - <%= @post.all.count %> </h3>
+    <p><a href="/posts/">View</a></p>
+  </div>
+ </div>
+ <br>
+ <div class="row">
+  <div class="col-md-4 text-center">
+    <h3><i class="fas fa-list"></i> Temas - <%= @themes.all.count %> </h3>
+    <p><a href="/themes">View</a></p>
+  </div>
+  <div class="col-md-4 text-center">
+    <h3><i class="fas fa-book"></i> Categorias - <%= @topics.all.count %> </h3>
+    <p><a href="/posts_topics">View</a></p>
+  </div>
+ </div>
+    <hr>
+  </div>

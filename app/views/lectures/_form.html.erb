@@ -5,13 +5,15 @@
 
   <div class="form-inputs">
     <%= f.input :title %>
-    <%= f.input :description %>
     <%= f.input :number %>
-    <%= f.input :content %>
+    <%= f.input :description %>
+    <div class="row">
+      <div class="col-md-4"><%= f.input :writter %></div>
+      <div class="col-md-4"><%= f.input :lenght %></div>
+      <div class="col-md-4"><%= f.input :year %></div>
+    </div>
+    <%= f.text_area :content,  class: "tinymce" %>
     <%= f.input :video %>
-    <%= f.input :writter %>
-    <%= f.input :lenght %>
-    <%= f.input :year %>
   </div>
 
   <div class="form-actions">

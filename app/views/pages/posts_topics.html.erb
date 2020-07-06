@@ -1,0 +1,11 @@
+<div class="container" style="padding-top: 100px; padding-bottom: 100px;">
+  <h2>Categorias</h2>
+  <hr>
+  <% @topics.each do |topic| %>
+  <p> <strong><%= topic.title %></strong> - <%= link_to 'Show', topic %> | <%= link_to 'Edit', edit_topic_path(topic) %> | <%= link_to 'Destroy', topic, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </p>
+  <% end %>
+  <%= link_to 'New Post', new_topic_path %>
+  <br>
+  <hr>
+</div>
