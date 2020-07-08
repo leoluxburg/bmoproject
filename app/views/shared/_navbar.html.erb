@@ -12,6 +12,7 @@
             <%= link_to "Comunidad", "/community", class: "dropdown-item" %>
             <%= link_to "Contacto", "/contact", class: "dropdown-item" %>
             <% if user_signed_in? %>
+            <%= link_to "Dashboard", "/landofooo", class: "dropdown-item" %>
             <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
             <% end %>
     </ul>
