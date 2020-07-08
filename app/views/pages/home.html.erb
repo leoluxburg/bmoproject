@@ -10,7 +10,28 @@
     <i class="fa fa-angle-double-down symbols" aria-hidden="true"></i>
   </div>
 </div>
-<div class="container" style="padding-top: 100px; padding-bottom: 100px;">
+<div class="container"  style="padding-top: 50px; ">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 text-center">
+      <div class="card text-center" style="background-color: #F4F4F4;" >
+        <div class="card-header" style="background-color: black; color: white" >
+          Proximo Ep.
+        </div>
+        <div class="card-body" >
+          <h3><i class="fab fa-twitch"></i></h3>
+          <h5 class="card-title">01 - Programacion</h5>
+          <p class="card-text">Aprende que es la programacion. <br> En vivo <br> 18 - Julio -2020</p>
+        </div>
+        <div class="card-footer text-muted" style="background-color: black; color: white" >
+          <a href="https://www.twitch.tv/bmoproject" target="_blank" style="color: white;">Ver</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+<div class="container" style="padding-top: 50px; padding-bottom: 100px;">
   <h2>Lecturas</h2>
   <hr>
   <div class="row">
@@ -71,18 +92,18 @@
     <div id="home" class="container tab-pane active">
       <h2 class=""><%= @post.theme.icon.html_safe %> <%= @post.theme.title%></h2>
       <div style=" padding-left: 30px;">
-          <%= link_to @post do %>
-          <h5><i class="fas fa-sd-card"></i> <%= @post.title %></h5>
-          <div style=" padding-left: 10px;">
-            <p class=""> <i class="fas fa-hourglass-end"></i> <%= @post.time %> | <i class="fas fa-language"></i> <%= @post.language%> | <i class="fa fa-calendar"></i> <%= @post.year %> <br>
-               - <%=@post.description %> </p>
-            </div>
-            <% end%>
-          </div>
-      </div>
-    </div>
-  </div>
-  <hr>
+        <%= link_to @post do %>
+        <h5><i class="fas fa-sd-card"></i> <%= @post.title %></h5>
+        <div style=" padding-left: 10px;">
+          <p class=""> <i class="fas fa-hourglass-end"></i> <%= @post.time %> | <i class="fas fa-language"></i> <%= @post.language%> | <i class="fa fa-calendar"></i> <%= @post.year %> <br>
+           - <%=@post.description %> </p>
+         </div>
+         <% end%>
+       </div>
+     </div>
+   </div>
+ </div>
+ <hr>
 </div>
 
 
