@@ -130,7 +130,11 @@ iframe {
   border-radius: 50px;
 }
 
-
+.title-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 .buttonv2:hover {
   background-color: white;
   color: black;
