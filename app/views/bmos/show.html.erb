@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bmo.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @bmo.email %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @bmo.category %>
+</p>
+
+<p>
+  <strong>Answer:</strong>
+  <%= @bmo.answer %>
+</p>
+
+<p>
+  <strong>Reason:</strong>
+  <%= @bmo.reason %>
+</p>
+
+<%= link_to 'Edit', edit_bmo_path(@bmo) %> |
+<%= link_to 'Back', bmos_path %>

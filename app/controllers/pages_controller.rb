@@ -14,6 +14,7 @@ class PagesController < ApplicationController
     @post = Post.all
     @lectures = Lecture.all
     @subscriptions = Subscription.all
+    @bmos = Bmo.all
   end
 
   def posts_topics

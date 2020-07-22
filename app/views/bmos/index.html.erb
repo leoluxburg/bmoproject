@@ -1,0 +1,15 @@
+<div style="padding-top: 80px; padding-bottom: 80px;" class="container">
+  <h1>BMO</h1>
+  <hr>
+  <div class="row">
+
+  <% @bmos.each do |bmo| %>
+  <p>User: <%= bmo.name %> <br>
+  Email: <%= bmo.email %> <br>
+  <%= link_to 'Show', bmo %> |
+  <%= link_to 'Destroy', bmo, method: :delete, data: { confirm: 'Are you sure?' } %> </p>
+
+  <% end %>
+  </div>
+  <hr>
+</div>
