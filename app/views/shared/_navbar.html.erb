@@ -1,21 +1,22 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top" style="background-color: black; margin-bottom: 50px;">
   <%= link_to "/", class: "navbar-brand" do %>
-    <%= image_tag ('logo.png') %>
-    <% end %>
-    <div class="dropdown ">
-          <%= image_tag "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1200px-Hamburger_icon_white.svg.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+  <%= image_tag ('logo.png') %>
+  <% end %>
+  <div class="dropdown ">
+    <%= image_tag "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1200px-Hamburger_icon_white.svg.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
     <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-    <%= link_to "Home", "/", class: "dropdown-item" %>
-            <%= link_to "Lecturas", "/lectures", class: "dropdown-item" %>
-            <%= link_to "Episodios", "https://www.twitch.tv/bmoproject", class: "dropdown-item", target: "_blank"%>
-            <%= link_to "Tutoriales", "/topics", class: "dropdown-item" %>
-            <%= link_to "Enlaces", "/links", class: "dropdown-item" %>
-            <%= link_to "Comunidad", "/community", class: "dropdown-item" %>
-            <%= link_to "Contacto", "/contact", class: "dropdown-item" %>
-            <% if user_signed_in? %>
-            <%= link_to "Dashboard", "/landofooo", class: "dropdown-item" %>
-            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-            <% end %>
+      <%= link_to "Home", "/", class: "dropdown-item" %>
+      <%= link_to "BMO", "/bmos/new", class: "dropdown-item" %>
+      <%= link_to "Lecturas", "/lectures", class: "dropdown-item" %>
+      <%= link_to "Episodios", "https://www.twitch.tv/bmoproject", class: "dropdown-item", target: "_blank"%>
+      <%= link_to "Tutoriales", "/topics", class: "dropdown-item" %>
+      <%= link_to "Enlaces", "/links", class: "dropdown-item" %>
+      <%= link_to "Comunidad", "/community", class: "dropdown-item" %>
+      <%= link_to "Contacto", "/contact", class: "dropdown-item" %>
+      <% if user_signed_in? %>
+      <%= link_to "Dashboard", "/landofooo", class: "dropdown-item" %>
+      <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+      <% end %>
     </ul>
   </div>
 </div>
