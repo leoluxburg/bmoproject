@@ -5,7 +5,7 @@ class LecturesController < ApplicationController
   # GET /lectures
   # GET /lectures.json
   def index
-    @lectures = Lecture.all
+    @lectures = Lecture.all.order("id ASC")
   end
 
   # GET /lectures/1
