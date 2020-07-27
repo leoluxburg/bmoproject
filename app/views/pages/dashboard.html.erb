@@ -15,9 +15,9 @@
     <h3><i class="fas fa-video"></i> Tutoriales - <%= @post.all.count %> </h3>
     <p><a href="/posts/">View</a></p>
   </div>
- </div>
- <br>
- <div class="row">
+</div>
+<br>
+<div class="row">
   <div class="col-md-4 text-center">
     <h3><i class="fas fa-list"></i> Temas - <%= @themes.all.count %> </h3>
     <p><a href="/themes">View</a></p>
@@ -30,6 +30,14 @@
     <h3><i class="fas fa-list"></i> BMO - <%= @bmos.all.count %> </h3>
     <p><a href="/bmos">View</a></p>
   </div>
- </div>
-    <hr>
+</div>
+<div class="row">
+  <div class="col-md-4 text-center">
+    <h3><i class="fas fa-microphone-alt"></i> Podcast - <%= @episode.all.count %> </h3>
+    <p><a href="/all_episodes">View</a></p>
+    <%= link_to 'New Episode', new_episode_path %>
+
   </div>
+</div>
+<hr>
+</div>

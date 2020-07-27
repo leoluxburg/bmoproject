@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :episodes
   resources :bmos
   resources :subscriptions
   resources :lectures
