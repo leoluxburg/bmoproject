@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :community, :contact, :links, :ig ]
+  skip_before_action :authenticate_user!, only: [ :home, :community, :contact, :links, :ig, :team ]
 
   def home
     @topics = Topic.all
@@ -28,6 +28,10 @@ class PagesController < ApplicationController
 
   def sandbox
     @post = Post.all.first
+  end
+
+  def team
+
   end
 
   def ig

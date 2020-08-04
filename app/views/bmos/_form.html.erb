@@ -1,4 +1,3 @@
-
 <%= simple_form_for(@bmo) do |f| %>
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
@@ -6,14 +5,15 @@
   <div class="form-inputs">
     <%= f.input :name %>
     <%= f.input :email %>
-    <%= f.input :category, :collection => %w[Programacion] %>
+    <%= f.input :category, :collection => %w[Programacion Desarrollo-Web  Desarrollo-de-aplicaciones-moviles Idea Consultoria] %>
     <br>
-    <h5>Que quieres aprender?</h5>
+    <h5>¿Que quieres hacer?</h5>
+    <p>Cuentanos que te gustaria hacer o aprender.</p>
     <%= f.input :answer %>
-    <h5>Porque?</h5>
+    <h5>¿Porque?</h5>
     <%= f.input :reason %>
   </div>
-
+<br>
   <div class="form-actions">
     <%= f.button :submit, class: "btn btn-dark" %>
   </div>
