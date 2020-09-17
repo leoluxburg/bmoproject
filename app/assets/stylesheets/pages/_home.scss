@@ -50,6 +50,19 @@ ul {
   height: 300px;
 }
 
+.bannerv2 {
+  color: white;
+  text-align: center;
+  height: 40vh;
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  background-position: center;
+}
+
+
 .small img{
   height: 300px;
 }
