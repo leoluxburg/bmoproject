@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :themes
   resources :topics
   get '/team', to:'pages#team'
+  get '/thebounty', to:'pages#bounty'
   get '/sandbox', to:'pages#sandbox'
   get '/ig', to:'pages#ig'
   get '/community', to:'pages#community'

@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :community, :contact, :links, :ig, :team ]
+  skip_before_action :authenticate_user!, only: [ :home, :community, :contact, :links, :ig, :team, :bounty ]
 
   def home
     @topics = Topic.all
@@ -31,6 +31,10 @@ class PagesController < ApplicationController
   end
 
   def team
+
+  end
+
+  def bounty
 
   end
 
