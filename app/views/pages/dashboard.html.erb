@@ -34,9 +34,11 @@
 <div class="row">
   <div class="col-md-4 text-center">
     <h3><i class="fas fa-microphone-alt"></i> Podcast - <%= @episode.all.count %> </h3>
-    <p><a href="/all_episodes">View</a></p>
-    <%= link_to 'New Episode', new_episode_path %>
-
+    <p><a href="/all_episodes">View</a> | <%= link_to 'New Episode', new_episode_path %></p>
+  </div>
+  <div class="col-md-4 text-center">
+    <h3><i class="fas fa-user-astronaut"></i> Hunters - <%= @episode.all.count %> </h3>
+    <p><a href="/hunters">View</a> </p>
   </div>
 </div>
 <hr>
