@@ -5,7 +5,12 @@
   <div class="form-inputs">
     <%= f.input :name %>
     <%= f.input :email %>
-    <%= f.input :category, :collection => %w[Programacion Desarrollo-Web  Desarrollo-de-aplicaciones-moviles Idea Consultoria] %>
+    <%= f.input :category, :collection => %w[Programacion Desarrollo-Web  Desarrollo-de-aplicaciones-moviles] %>
+    <br>
+    <h5>Agenda tu Sesión</h5>
+    <p>Cuentanos que dias estas disponible para una llamada.</p>
+    <%= f.input :date %>
+    <%= f.input :time %>
     <br>
     <h5>¿Cual es tu meta?</h5>
     <p>Cuentanos que te gustaria desarrollar o aprender.</p>

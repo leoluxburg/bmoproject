@@ -71,6 +71,6 @@ class BmosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def bmo_params
-      params.require(:bmo).permit(:name, :email, :category, :answer, :reason)
+      params.require(:bmo).permit(:name, :email, :category, :answer, :reason, :date, :time)
     end
 end
